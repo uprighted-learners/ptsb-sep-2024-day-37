@@ -17,6 +17,8 @@ app.get('/api/health', (req, res) => {
     res.send('I am alive!');
 });
 
+app.use(express.static('public'));
+
 const User = require('./models/user.model');
 
 // middleware function to check json web token authentication

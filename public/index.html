@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Authz / Authn Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- REGISTRATION FORM -->
+      <h2>Register</h2>
+      <form id="registerForm">
+        <label
+          type="text"
+          for="username"
+          >Username:</label
+        >
+        <input
+          type="text"
+          id="registerUsername"
+          placeholder="Username"
+          name="username"
+        />
+        <br />
+        <label
+          type="text"
+          for="Password"
+          >Password:</label
+        >
+        <input
+          type="text"
+          id="registerPassword"
+          placeholder="Password"
+          name="Password"
+        />
+        <br />
+        <button type="submit">Register</button>
+      </form>
+      <p id="registerMessage"></p>
+    </div>
+    <div class="auth-section">
+      <!-- LOGIN FORM -->
+       <h2>Login</h2>
+       <form id="loginForm">
+        <label
+          type="text"
+          for="username"
+          >Username:</label
+        >
+        <input
+        type="text"
+        id="loginUsername"
+        placeholder="Username"
+        name="loginUsername"
+        />
+        <br />
+        <label
+        type="text"
+        for="Password"
+        >Password:</label
+        >
+        <input
+        type="text"
+        id="loginPassword"
+        placeholder="Password"
+        name="loginPassword"
+        />
+        <br />
+        <button type="submit">Login</button>
+        <p id="loginMessage"></p>
+    </div>
+
+    <!-- PROTECTED CONTENT -->
+    <div class="auth-section" id="protectedSection">
+      <h2>Protected Content</h2>
+      <button id="accessProtectedBtn">Access Protected Content</button>
+      <p id="protectedMessage"></p>
+      <button id="logoutBtn">Logout</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
